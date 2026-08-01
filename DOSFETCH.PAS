@@ -82,7 +82,7 @@ begin
   GoToXY(StartX, StartY + 18);
   Write(' '#208#223#223#223#223#223#223#223#223#223#189'  '#208#223#223#223#223#223#223);
   Write(#223#223' '#212#223#223#223#223#223#223#223);
-end; {amuga goydum burançn ellesmeyin cok}
+end; {amuga goydum buran¬çn ellesmeyin cok}
 
 
 function GetResolution: string;
@@ -287,7 +287,7 @@ begin
      SetTextNormal(50,2,70,4,GetSystemTime);
 
      PutInfo('OS', 'MS-DOS');
-     PutInfo('Version', Concat(wtostr(Lo(dosversion)),'.',wtostr(lo(dosversion))));
+     PutInfo('Version', Concat(wtostr(Lo(dosversion)),'.',wtostr(hi(dosversion))));
 
      days := GetUptimeSeconds div 86400;
      hours := (getuptimeseconds mod 86400) div 3600;
